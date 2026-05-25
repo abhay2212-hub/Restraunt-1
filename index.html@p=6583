@@ -378,7 +378,30 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 }
 
-</style></head>
+</style><style>
+			/* Fix aspect ratio of elementor background video playing */
+			.elementor-background-video-container {
+				position: absolute !important;
+				top: 0 !important;
+				left: 0 !important;
+				width: 100% !important;
+				height: 100% !important;
+				overflow: hidden !important;
+				z-index: 0 !important;
+				pointer-events: none !important;
+			}
+			.elementor-background-video-hosted {
+				width: 100% !important;
+				height: 100% !important;
+				object-fit: cover !important;
+				object-position: center center !important;
+			}
+			section.elementor-element-66e6a75 {
+				position: relative !important;
+				overflow: hidden !important;
+			}
+</style>
+</head>
 
 <body class="wp-singular page-template page-template-elementor_header_footer page page-id-6583 wp-custom-logo wp-embed-responsive wp-theme-patiotime elementor-default elementor-template-full-width elementor-kit-39 elementor-page elementor-page-6583 light-color site-layout-fullwidth pt-form-underline theme-patiotime" data-rsssl="1">
 
