@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:wfw="http://wellformedweb.org/CommentAPI/">
 <channel>
-<title>Tanatan</title>
-<atom:link href="/feed/" rel="self" type="application/rss+xml"></atom:link>
+<title>Sakhawat Restaurant</title>
+<atom:link href="./feed/" rel="self" type="application/rss+xml"></atom:link>
 <link/>/
-	<description>We are a Modern Indian restaurant serving a fusion of classic Indian cuisine</description>
+	<description>We are an authentic Lucknowi restaurant serving the finest Mughlai cuisine and legendary kebabs</description>
 <lastbuilddate>Fri, 23 Jan 2026 05:35:12 +0000</lastbuilddate>
 <language>en-US</language>
 <sy:updateperiod>
@@ -13,9 +13,36 @@
 <generator>https://wordpress.org/?v=6.9.4</generator>
 <image/>
 <url>/wp-content/uploads/2023/03/cropped-Untitled-design-13-32x32.png</url>
-<title>Tanatan</title>
+<title>Sakhawat Restaurant</title>
 <link/>/
 	<width>32</width>
 <height>32</height>
 </channel>
 </rss>
+
+<script>
+// Lazyload fix - swap data-src to src for images
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('img[data-src]').forEach(function(img) {
+        if (img.dataset.src && !img.dataset.src.startsWith('data:')) {
+            img.src = img.dataset.src;
+            img.classList.remove('lazyload');
+            img.classList.add('lazyloaded');
+        }
+        if (img.dataset.srcset) { img.srcset = img.dataset.srcset; }
+        if (img.dataset.sizes) { img.sizes = img.dataset.sizes; }
+    });
+    document.querySelectorAll('[data-bg-image]').forEach(function(el) {
+        var bgUrl = el.dataset.bgImage;
+        if (bgUrl) {
+            el.style.backgroundImage = bgUrl;
+            el.classList.remove('lazyload');
+            el.classList.add('lazyloaded');
+        }
+    });
+    document.querySelectorAll('.lazyload').forEach(function(el) {
+        el.classList.remove('lazyload');
+        el.classList.add('lazyloaded');
+    });
+});
+</script>
