@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(.*)\\.css@(.*)",
+      "source": "/(.*)\\.css",
       "headers": [
         {
           "key": "Content-Type",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.js@(.*)",
+      "source": "/(.*)\\.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.woff@(.*)",
+      "source": "/(.*)\\.woff",
       "headers": [
         {
           "key": "Content-Type",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.woff2@(.*)",
+      "source": "/(.*)\\.woff2",
       "headers": [
         {
           "key": "Content-Type",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.ttf@(.*)",
+      "source": "/(.*)\\.ttf",
       "headers": [
         {
           "key": "Content-Type",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.eot@(.*)",
+      "source": "/(.*)\\.eot",
       "headers": [
         {
           "key": "Content-Type",
@@ -55,20 +55,11 @@
       ]
     },
     {
-      "source": "/(.*)\\.svg@(.*)",
+      "source": "/(.*)\\.svg",
       "headers": [
         {
           "key": "Content-Type",
           "value": "image/svg+xml"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)\\.html@(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/html; charset=utf-8"
         }
       ]
     }
